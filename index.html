@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+</head>
+<body>
+    <h1>Weather App</h1>
+    <input 
+        type="text" 
+        id="city" 
+        placeholder="Enter city name (e.g., New York)" 
+        aria-label="City Name" 
+    />
+    <button id="getWeather" aria-label="Get Weather">Get Weather</button>
+    <div id="weather" aria-live="polite">
+        <h2 id="cityName"></h2>
+        <i id="icon" class="wi"></i>
+        <p id="description"></p>
+        <h3 id="temperature"></h3>
+    </div>
+    <footer>
+        <p>Powered by <a href="https://openweathermap.org/" target="_blank" rel="noopener">OpenWeatherMap API</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
